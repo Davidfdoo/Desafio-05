@@ -1,0 +1,670 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*---------------------------------------------------------------index.html--------------------------------------------------------------------*/
+/*-------HEADER----------*/
+.header{
+    background-color: rgb(77, 133, 206);
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: 70% 30% ;
+    grid-template-areas: 
+                        "header__logo header__menu "
+                        "header__titulo header__menu";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.header{
+    background-color: rgb(77, 133, 206);
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    padding: 10px;
+    z-index: 2;
+}
+
+.header__logo{
+    grid-area: header__logo;
+    width: 10rem;
+    height: 10rem;
+    margin:  5px 5px 0px 5px;
+    padding: 10px;    
+}
+
+.header__titulo{
+    grid-area: header__titulo;
+    color: black;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;    
+}
+
+.header__menu{
+    grid-area: header__menu;
+    list-style: none; 
+}
+
+header nav li{
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+    padding: 5px 3.5px;
+    border: 1px solid #ffffffba;
+    border-radius: .25rem;
+    color: #ffffff;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out;
+}
+
+header nav li:hover, header nav li:active, header nav li:focus {
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+/*--------MAIN--------------*/
+
+.index__main{
+    background-color: rgb(212, 255, 255);
+    padding: 20px;
+}
+
+.index__main{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: 1fr 0.1fr 1fr 0.1fr 1fr;
+    grid-template-areas: 
+                        "section1__imgmuestra1"
+                        "section2"
+                        "section3__imgmuestra2"
+                        "section4"
+                        "section5__imgmuestra3";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+.index__main .section1__imgmuestra1{
+    grid-area: section1__imgmuestra1;
+    height: 20rem;
+    width: 23rem;
+}
+
+.index__main .section2{
+    grid-area: section2;
+    margin: 0.8rem;
+    padding: 0.5rem;
+}
+
+.index__main .section2__nuestrasfunciones{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.index__main .section2__nuestrasfunciones__p{
+    color: black;
+    text-align: center;
+    text-align: justify;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.index__main .section3__imgmuestra2{
+    grid-area: section3__imgmuestra2;
+    height: 20rem;
+    width: 23rem;
+}
+
+.index__main .section4{
+    grid-area: section4;
+    margin: 0.8rem;
+    padding: 0.5rem;
+}
+.index__main .section4__nuestrosserviciosyproductos{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.index__main .section4__nuestrosserviciosyproductos__P{
+    color: black;
+    text-align: center;
+    text-align: justify;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.index__main .section5__imgmuestra3{
+    grid-area: section5__imgmuestra3;
+    height: 20rem;
+    width: 23rem;
+}
+
+
+
+
+
+/*----------pie de pagina footer----------  */
+
+footer {
+    background-color:rgb(13, 21, 65);
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.5fr 1fr 0.3fr;
+    grid-template-areas: 
+                        "footer__div1 footer__div2"
+                        "footer__div3 footer__div3 "
+                        "section6 section6";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;    
+}
+
+
+footer .footer__div1{
+    grid-area:footer__div1;
+    margin: 0.5rem;
+    row-gap: 10rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    list-style: none;
+}
+
+footer .footer__div2{
+    grid-area:footer__div2;
+    margin: 0.5rem;
+    row-gap: 10rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    list-style: none;
+}
+
+
+footer .footer__div3{
+    grid-area: footer__div3 ;
+    margin-top: 0.5rem;
+}
+
+footer .section6{
+    grid-area: section6;
+    text-align: center;
+    color: black;
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+/*------------------------------------------------------------Nosotros-------------------------------------------------------------------*/
+
+.main__nosotros{
+    background-color: rgb(212, 255, 255);
+    display: grid;
+    grid-template-columns: 30rem;
+    grid-template-rows: 0.1fr 0.2fr 1fr 2fr;
+    grid-template-areas: 
+                        "Nosotros"
+                        "Historia"
+                        "imgNosotros"
+                        "Historia__parrafo";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;    
+}
+
+.Nosotros{
+    grid-area: Nosotros;
+    margin-top: 2rem;
+}
+
+.Historia{
+    grid-area: Historia;
+    text-transform: uppercase
+}
+
+.Historia__parrafo{
+    grid-area: Historia__parrafo;
+    padding: 0.5rem 4rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    text-align: justify;
+}
+
+.imgNosotros{
+    grid-area: imgNosotros;
+    margin-top: 0px;
+    width: 23rem;
+    height: 20rem;
+}
+
+
+/* -----------------------------------------------------------productos------------------------------------------------------------------*/
+
+.main__productos{
+    background-color: rgb(212, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.1fr 0.1fr 0.3fr 0.2fr 0.7fr 2fr;
+    grid-template-areas: 
+                        "productos productos"
+                        "barraBusqueda barraBusqueda "
+                        "escogerProducto escogerProducto"
+                        "EspecificacionesTecnicas EspecificacionesTecnicas"
+                        "EspecificacionesTecnicas__parrafo EspecificacionesTecnicas__parrafo"
+                        "producto__desfibrilador producto__desfibrilador";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;    
+}
+
+.productos{
+    grid-area: productos;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem auto;
+}
+
+.escogerProducto{
+    background-color:  rgb(212, 255, 255);
+    border:0.2rem solid rgb(26, 188, 156);
+    grid-area: escogerProducto;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.barraBusqueda {
+    grid-area: barraBusqueda;
+    display: flex;
+    margin: 0.5rem;    
+}
+  
+.barraBusqueda>input[type=text],
+.barraBusqueda>button {
+    display:block;
+}
+  
+.barraBusqueda>input[type=text] {
+    padding:0.5rem 2.8rem;
+    border:0.2rem solid rgb(26, 188, 156);
+}
+  
+.barraBusqueda>button {
+    padding:0.4rem 0.6rem;
+    background-color:rgb(26, 188, 156);
+}
+
+.EspecificacionesTecnicas{
+    grid-area: EspecificacionesTecnicas;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 1rem 0.5rem;
+}
+
+.EspecificacionesTecnicas__parrafo{
+    grid-area: EspecificacionesTecnicas__parrafo;
+    color: black;
+    text-align: center;
+    text-align: justify;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0.2rem 1rem 0.1rem 1rem;
+    padding: 0.5rem;
+}
+
+.producto__desfibrilador{
+    grid-area: producto__desfibrilador;
+    height: 20rem;
+    width: 20rem;
+}
+
+
+/*-------------------------------------------------------Galeria------------------------------------------------------------------------*/
+
+.main__galeria{
+    background-color: rgb(212, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-areas:
+                        "Galeria"
+                        "desfibrilador" 
+                        "rayos-x" 
+                        "electrocardiografo" 
+                        "electrobisturi" 
+                        "maquinaDeAnestesia" 
+                        "lamparaCielitica";
+    justify-items: center;
+    align-items: center;
+}
+
+.Galeria{
+    grid-area: Galeria;
+    margin: 1rem ;
+}
+
+.galeria__desfibrilador{
+    grid-area: desfibrilador;
+    background-color: rgb(128, 149, 163); 
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 20rem;
+}
+
+.galeria__desfibrilador .desfibrilador{
+    width: 14rem;
+    height: 12rem;
+}
+
+.titulo__desfibrilador{
+    text-align: center;
+}
+
+.parrafoDesfibrilador{
+    text-align: center;
+    text-align: justify;
+}
+
+.galeria__rayos-x{
+    grid-area: rayos-x;
+    background-color: rgb(128, 149, 163);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 20rem;
+}
+
+.galeria__rayos-x .rayos-x{
+    width: 14rem;
+    height: 12rem;
+}
+
+.titulo__rayos-x{
+    text-align: center;
+}
+
+.parrafoRayos-x{
+    text-align: center;
+    text-align: justify;
+}
+
+.galeria__electrocardiografo{
+    grid-area: electrocardiografo;
+    background-color: rgb(128, 149, 163);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 20rem;
+}
+
+.galeria__electrocardiografo .electrocardiografo{
+    width: 14rem;
+    height: 12rem;
+}
+
+.titulo__electrocardiografo{
+    text-align: center;
+}
+
+.parrafoElectrocardiografo{
+    text-align: center;
+    text-align: justify;
+}
+
+.galeria__electrobisturi{
+    grid-area: electrobisturi;
+    background-color: rgb(128, 149, 163);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 20rem;
+}
+
+.galeria__electrobisturi .electrobisturi{
+    width: 14rem;
+    height: 12rem;
+}
+
+.titulo__electrobisturi{
+    text-align: center;
+}
+
+.parrafoElectrobisturi{
+    text-align: center;
+    text-align: justify;
+}
+
+.galeria__maquinaDeAnestesia{
+    grid-area: maquinaDeAnestesia;
+    background-color: rgb(128, 149, 163);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 20rem;
+}
+
+.galeria__maquinaDeAnestesia .maquinaDeAnestesia{
+    width: 14rem;
+    height: 12rem;
+}
+
+.titulo__maquinaDeAnestesia{
+    text-align: center;
+}
+
+.parrafoMaquinaDeAnestesia{
+    text-align: center;
+    text-align: justify;
+}
+
+.galeria__lamparaCielitica{
+    grid-area: lamparaCielitica;
+    background-color: rgb(128, 149, 163);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 20rem;
+}
+
+.galeria__lamparaCielitica .lamparaCielitica{
+    width: 14rem;
+    height: 12rem;
+}
+
+.titulo__lamparaCielitica{
+    text-align: center;
+}
+
+.parrafoLamparaCielitica{
+    text-align: center;
+    text-align: justify;
+}
+
+
+/*--------------------------------------------------------------------mediaqueries---------------------------------------------------------------------*/
+
+@media screen and (min-width:1024px){
+
+    /*---------------------index-----------------*/
+
+    /*-------header---------*/
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+                            "header__logo header__titulo header__menu header__menu ";
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .header__menu{
+        display: flex;
+        flex-direction: row;
+    }
+ 
+    .header__logo{
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    .header__titulo{
+        font-size: 20px;
+    }
+      
+    header nav li{
+        margin: 1rem;
+        padding: 10px 8px;
+    }
+
+    /*--------MAIN--------------*/
+
+    .index__main{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+                            "section1 section1"
+                            "section3__imgmuestra2 section2 "
+                            "section4 section5__imgmuestra3";
+    }
+
+    .section1{
+        grid-area: section1;
+        display: block;
+    }
+       
+    .index__main .section1__imgmuestra1{
+        height: 25rem;
+        width: 40rem;
+    }
+
+    .index__main .section2{
+        margin: 0.2rem;
+        padding: 0.5rem;
+    }
+
+    .index__main .section3__imgmuestra2{
+        height: 20rem;
+        width: 30rem;
+        margin: 0.5rem;
+    }
+
+    .index__main .section4{
+        margin: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .index__main .section5__imgmuestra3{
+        grid-area: section5__imgmuestra3;
+        height: 20rem;
+        width: 23rem;
+    }
+
+    /*----------pie de pagina footer----------*/
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 0.3fr;
+        grid-template-areas: 
+                            "footer__div1 footer__div2 footer__div3"
+                            "section6 section6 section6";
+    }
+
+
+    /*----------------------------Nosotros-------------------------*/
+
+    .main__nosotros{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 0.1fr 1fr;
+        grid-template-areas: 
+                            "Nosotros Nosotros"
+                            "Historia imgNosotros"
+                            "Historia__parrafo imgNosotros";  
+    }
+
+    .Nosotros{
+        margin: 2rem;
+    } 
+  
+    .Historia__parrafo{
+        padding: 0.8rem 2rem;
+    }
+    
+    .imgNosotros{
+        height: 20rem;
+        width: 30rem;
+    }
+    
+    /*--------------------------------Productos------------------------*/
+
+    .main__productos{
+        grid-template-columns: 1fr 1fr 2fr ;
+        grid-template-rows: 0.2fr 0.5fr 0.1fr 1fr ;
+        grid-template-areas: 
+                            "productos productos productos"
+                            "escogerProducto barraBusqueda producto__desfibrilador"
+                            "EspecificacionesTecnicas EspecificacionesTecnicas producto__desfibrilador"
+                            "EspecificacionesTecnicas__parrafo EspecificacionesTecnicas__parrafo producto__desfibrilador ";
+    }
+
+  
+    .escogerProducto{
+        padding: 0.1rem;
+    }
+
+    .barraBusqueda>input[type=text] {
+        padding:0.7rem 2.8rem;
+    }
+
+    .EspecificacionesTecnicas{
+        margin: 0.5rem 1rem 0.1rem 1rem;
+    }
+
+    .EspecificacionesTecnicas__parrafo{
+        margin: 0.1rem ;
+        padding: 0.2rem;
+    }
+
+    /*----------------------------Galeria--------------------*/
+
+    .main__galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 2fr 2fr;
+        grid-template-areas:
+                            "Galeria Galeria Galeria"
+                            "desfibrilador rayos-x electrocardiografo" 
+                            "electrobisturi maquinaDeAnestesia lamparaCielitica";
+    }
+
+
+}
+
+
+
+
+ 
+
