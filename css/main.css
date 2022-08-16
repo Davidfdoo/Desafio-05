@@ -100,12 +100,13 @@ header nav li:hover, header nav li:active, header nav li:focus {
     text-align: center;
 }
 
-
 .index__main .section1__imgmuestra1{
     grid-area: section1__imgmuestra1;
     height: 20rem;
     width: 23rem;
 }
+
+.section1:hover .section1__imgmuestra1 {-webkit-transform:scale(1.3);transform:scale(1.3);}
 
 .index__main .section2{
     grid-area: section2;
@@ -134,6 +135,8 @@ header nav li:hover, header nav li:active, header nav li:focus {
     width: 23rem;
 }
 
+.section3:hover .section3__imgmuestra2 {-webkit-transform:scale(1.3);transform:scale(1.3);}
+
 .index__main .section4{
     grid-area: section4;
     margin: 0.8rem;
@@ -160,9 +163,31 @@ header nav li:hover, header nav li:active, header nav li:focus {
     width: 23rem;
 }
 
+.section5:hover .section5__imgmuestra3 {
+	-webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+}
 
-
-
+ @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
 
 /*----------pie de pagina footer----------  */
 
